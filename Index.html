@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 20px;
+    }
+    nav {
+        background-color: rgba(255, 255, 255, 0.966);
+        color: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+    h1 {
+        margin: 0;
+    }
+    table {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: rgba(255, 213, 25, 0.705);
+        table-layout:initial;
+
+    }
+    td {
+        padding: 10px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <form>
+    <nav >
+        <h1><strong>Admission Enquiry Form</strong></h1>
+    </nav>
+    <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="Address">Address</label></td>
+                <td><input type="text" id="address" name="address" placeholder="Address" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Mobile Number</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="date">DOB</label></td>
+                <td><input type="date" id="DOB" name="DOB"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email-id</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="pointer">Gender</label></td>
+                <td>
+                    <input type="radio" id="Gender" name="Male">Male
+                    <input type="radio" id="Gender" name="Male">Female
+                    <input type="radio" id="Gender" name="Male">Other      
+                <td>
+            </tr>
+            <tr>
+                <td><label for="checkbox">Hobbies</label></td>
+                <td>
+                    <input type="checkbox" id="hobby1" name="hobby1" value="Programming">Programming
+                    <input type="checkbox" id="hobby2" name="hobby2" value="Construction">Construction
+                    <input type="checkbox" id="hobby3" name="hobby3" value="Designning">Designning
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Select">Select Branck</label>
+                </td>
+                <td>
+                    <select id="branch" name="branch">
+                        <option>Computer</option>
+                        <option>Civil</option>
+                        <option>E & Tc</option>
+                        <option>Pharmacy</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td for="rating">Rate this Site</td>
+                <td><input type="number" name="rating" min="1" max="5" value="5"></td>
+            </tr>
+            <tr>
+                <td><label for="comment">Comment</label></td>
+                <td><textarea id="comment" name="comment" rows="4" cols="30" placeholder="Give Your Comment Here..."></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+    </table>
+    </form>
+
+</body>
+</html>
